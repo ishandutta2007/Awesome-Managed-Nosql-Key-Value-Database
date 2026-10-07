@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d172a" />
+      <stop offset="100%" stop-color="#161b33" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="node-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Filter for Drop Shadow & Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="text-shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <style>
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes float-particle {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+        50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      }
+      @keyframes dash-flow {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .bg-orb-1 { animation: pulse-glow 8s ease-in-out infinite; transform-origin: 200px 100px; }
+      .bg-orb-2 { animation: pulse-glow 10s ease-in-out infinite 2s; transform-origin: 1000px 220px; }
+      .particle-1 { animation: float-particle 6s ease-in-out infinite; }
+      .particle-2 { animation: float-particle 9s ease-in-out infinite 1.5s; }
+      .particle-3 { animation: float-particle 7s ease-in-out infinite 3s; }
+      .flow-line { stroke-dasharray: 8 8; animation: dash-flow 20s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Rect -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Dynamic Background Glowing Orbs (Behind content) -->
+  <circle class="bg-orb-1" cx="200" cy="80" r="160" fill="#38bdf8" opacity="0.15" filter="blur(50px)" />
+  <circle class="bg-orb-2" cx="1000" cy="240" r="180" fill="#818cf8" opacity="0.15" filter="blur(60px)" />
+  <circle cx="600" cy="160" r="140" fill="#c084fc" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Decorative Animated Grid / Network Flow Lines in Background -->
+  <g opacity="0.25">
+    <path class="flow-line" d="M 50,260 Q 300,180 600,260 T 1150,180" fill="none" stroke="url(#primary-glow)" stroke-width="2" />
+    <path class="flow-line" d="M 100,60 Q 400,140 700,60 T 1100,100" fill="none" stroke="url(#primary-glow)" stroke-width="1.5" />
+    <line x1="200" y1="50" x2="350" y2="150" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="1000" y1="270" x2="850" y2="170" stroke="#818cf8" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Background Floating Data Nodes (Low opacity, non-blocking) -->
+  <g class="particle-1">
+    <circle cx="180" cy="220" r="6" fill="#38bdf8" />
+    <circle cx="180" cy="220" r="14" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.5" />
+  </g>
+  <g class="particle-2">
+    <circle cx="1040" cy="90" r="5" fill="#818cf8" />
+    <circle cx="1040" cy="90" r="12" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.5" />
+  </g>
+  <g class="particle-3">
+    <circle cx="920" cy="250" r="7" fill="#c084fc" />
+  </g>
+
+  <!-- Top Decorative Border Accent -->
+  <rect x="0" y="0" width="1200" height="4" rx="2" fill="url(#primary-glow)" />
+
+  <!-- FOREGROUND CONTENT LAYER (Guaranteed clear visibility) -->
+  
+  <!-- Category Pill Badge above Title -->
+  <g transform="translate(425, 42)">
+    <rect x="0" y="0" width="350" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" opacity="0.9" />
+    <text x="175" y="21" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" text-anchor="middle">
+      ⚡ AWESOME MANAGED NOSQL DIRECTORY
+    </text>
+  </g>
+
+  <!-- Main Title Text -->
+  <text x="600" y="125" fill="#FFFFFF" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" text-anchor="middle" filter="url(#text-shadow)" letter-spacing="-0.5">
+    Awesome Managed NoSQL Key-Value Database
+  </text>
+
+  <!-- Subtitle Text -->
+  <text x="600" y="165" fill="#94a3b8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="500" text-anchor="middle">
+    Curated SaaS Managed Services, Serverless Platforms & High-Performance Open-Source Key-Value Stores
+  </text>
+
+  <!-- Key Feature Badges / Cards Row in Foreground -->
+  <g transform="translate(180, 205)">
+    <!-- Card 1: Cloud & Serverless -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="190" height="46" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="95" y="28" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+        ☁️ Serverless & Managed
+      </text>
+    </g>
+
+    <!-- Card 2: Key-Value & Document -->
+    <g transform="translate(210, 0)">
+      <rect x="0" y="0" width="190" height="46" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="95" y="28" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+        🔑 Key-Value & Wide-Column
+      </text>
+    </g>
+
+    <!-- Card 3: High Performance -->
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="190" height="46" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="95" y="28" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+        🚀 Sub-Millisecond Speed
+      </text>
+    </g>
+
+    <!-- Card 4: Open Source -->
+    <g transform="translate(630, 0)">
+      <rect x="0" y="0" width="190" height="46" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <text x="95" y="28" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+        📦 Open Source Ecosystem
+      </text>
+    </g>
+  </g>
+
+  <!-- Footer Border Line -->
+  <rect x="50" y="318" width="1100" height="2" fill="url(#primary-glow)" opacity="0.5" />
+</svg>
