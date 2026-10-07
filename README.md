@@ -64,7 +64,7 @@ Below is the structured index of fully managed SaaS & cloud NoSQL platforms, sor
 
 The open-source ecosystem provides powerful building blocks for distributed storage, in-memory caching, embedded key-value engines, and document databases.
 
-Below are top open-source projects sorted by **GitHub Stars_Count (Descending)**:
+Below are top open-source projects sorted by **GitHub_Stars_Count (Descending)**:
 
 1. **[Redis](https://github.com/redis/redis)** [![Stars](https://img.shields.io/github/stars/redis/redis?style=social&color=white)](https://github.com/redis/redis/stargazers)
    - 📜 **License**: RSALv2 / SSPL
