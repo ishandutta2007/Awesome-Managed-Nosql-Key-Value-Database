@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Managed-Nosql-Key-Value-Database/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -64,7 +64,7 @@ Below is the structured index of fully managed SaaS & cloud NoSQL platforms, sor
 
 The open-source ecosystem provides powerful building blocks for distributed storage, in-memory caching, embedded key-value engines, and document databases.
 
-Below are top open-source projects sorted by **GitHub Star Count (Descending)**:
+Below are top open-source projects sorted by **GitHub Stars_Count (Descending)**:
 
 1. **[Redis](https://github.com/redis/redis)** [![Stars](https://img.shields.io/github/stars/redis/redis?style=social&color=white)](https://github.com/redis/redis/stargazers)
    - 📜 **License**: RSALv2 / SSPL
@@ -189,7 +189,7 @@ Contributions from the developer community are warmly welcomed! Please follow th
 
 1. **Fork the Repository**: Click the **Fork** button at the top right of this repository.
 2. **Add or Edit Entries**: Update entries in `README.md` following the tabular or bulleted format.
-3. **Include Required Details**: Ensure entries list the **Official Name**, **Website/Repo Link**, **Specific Starting Price / Star Badge**, **Free Tier Limits**, and a concise description.
+3. **Include Required Details**: Ensure entries list the **Official Name**, **Website/Repo Link**, **Specific Starting Price / Stars_Badge**, **Free Tier Limits**, and a concise description.
 4. **Submit a Pull Request**: Create a PR with a short explanation of your changes.
 
 Check out our full awesome directory collection at **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)**!
